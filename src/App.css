@@ -1,5 +1,14 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+.container {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .App-logo {
@@ -22,6 +31,31 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+span {
+  color: rgb(238, 68, 68);
+  font-size: 10px;
+  width: 150px;
+  align-self: flex-start;
+}
+
+.newItemButton {
+  background-color: #3d6ddc;
+  color: white;
+  border: unset;
+  border-radius: 10px;
+  height: 25px;
+  margin-top: 25px;
+  width: 100px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.newItemButton:hover {
+  filter: brightness(1.5);
 }
 
 .App-link {
